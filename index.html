@@ -82,6 +82,7 @@
     <h1 class="visually-hidden">Главная страница магазина Device</h1>
   <!--Slider-->
     <section class="slider-promo">
+
       <div class="slider-controls">
         <form class="slider-selector" action="get">
           <input type="radio" id="slide-selfie" name="slide-control" value="slide-selfie">
@@ -111,6 +112,7 @@
           </tr>
         </table>
       </div>
+
       <div class="slide-promo slide-fitnes">
         <h2 class="slide-slogan section-title">Худеем<br> правильно!</h2>
         <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -124,6 +126,7 @@
           </tr>
         </table>
       </div>
+
       <div class="slide-promo slide-kvadrokopter">
         <h2 class="slide-slogan section-title">Порхает как бабочка,<br> жалит как пчела!</h2>
         <p class="slide-desription">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -244,14 +247,95 @@
       <a class="about-more button" href="#">Подробнее о нас</a>
     </section>
 
-    
-
-  	
+    <section class="contacts">
+      <h2 class="section-title">Контакты</h2>
+      <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+      <a class="write-us button" href="#">Напишите нам</a>
+    </section> 	
   </main>
 
-
+  <footer>
+    <div class="footer-top">
+      <a class="footer-logo">
+        <img src="img/logo-footer.png" alt="Логотип магазина Device">
+      </a>
+      <div class="user-menu">
+        <div class="user-login">
+          <ul class="login-list">
+            <li class="login-item">
+              <a class="login-link" href="#">Войти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="user-actions">
+          <ul class="actions-list">
+            <li class="actions-item actions-compare">
+              <a href="#">Сравнить</a>
+            </li>
+            <li class="actions-item actions-cart">
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-middle">
+      <p class="adress">г. Москва, ул. Строителей, 15</p>
+      <ul class="service-menu-list">
+        <li class="service-menu-item">
+          <a class="service-menu-link" href="#">Доставка</a>
+        </li>
+        <li class="service-menu-item">
+          <a class="service-menu-link" href="#">Гарантия</a>
+        </li>
+        <li class="service-menu-item">
+          <a class="service-menu-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <p class="phone">Тел.: +7 (495) 495-95-95</p>
+    </div>
+    <div class="footer-bottom">
+      <div class="social">
+        <ul class="social-list">
+          <li class="social-item social-facebook">
+            <a href="#">Facebook</a>
+          </li>
+          <li class="social-item social-instagram">
+            <a href="#">Instagram</a>
+          </li>
+          <li class="social-item social-twitter">
+            <a href="#">Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    </div>
+  </footer>
     
+  <section class="write-us-popup">
+    <h2 class="visually-hidden">Форма обратной связию Напишите Нам.</h2>
+    <form action="post">
+      <div class="popup-name">
+        <label for="name">Ваше имя: <br></label>
+        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+      </div>
+      <div class="popup-email">
+        <label for="e-mail">Ваш e-mail: <br></label>
+        <input type="e-mail" id="e-mail" name="e-mail" placeholder="email@example.com">
+      </div>
+      <div class="popup-letter">
+        <label for="write-letter">Текст письма: <br></label>
+        <textarea name="letter" id="write-letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="write-us-button button" type="submit">Отправить</button>
+      <button class="write-us-close close" type="button">Close</button>
+    </form>
+  </section>
 
+  <section class="map-popup">
+    <h2 class="visually-hidden">Как нас найти</h2>
+    <button class="map-close close">Close</button>
+  </section>
     
 
   </body>

@@ -7,75 +7,83 @@
   </head>
   <body>
   	<header class="main-header">
-  		
-  		<form class="search" action="#" method="get">
-  			<label class="search" for="header-search">Поиск по каталогу</label>
-        <input type="search" name="search" id="header-search" placeholder="Поиск по каталогу">
-        <button class="search-button" type="submit">Найти</button>
-  		</form>
-  		
-        <div class="header-top">
-          <a class="logo-link header-logo">
-            <img src="img/logo.png" alt="Логотип магазина Device" width="163" height="36">
-          </a>
-          <div class="user-block">
-            <ul class="user-navigation">
-              <li class="user-login">
-                <a class="user-navigation-link" href="#">Войти</a>
-              </li>
-              <li class="compare">
-                <a class="user-navigation-link" href="#">Сравнить</a>
-              </li>
-              <li class="shopping-cart">
-                <a class="user-navigation-link" href="#">Корзина</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="header-botoom">
-          <div class="catalog-block">
-            <a href="#">Каталог товаров</a>
-            <div class="catalog-menu">
-              <ul class="catalog-menu-items">
-                <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">Моноподы для селфи</a>
-                </li>
-                <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">Экшн-камеры</a>
+
+  		<div class="header-top">
+    		<a class="logo-link header-logo">
+          <img src="img/logo.png" alt="Логотип магазина Device" width="163" height="36">
+        </a>
+        <form class="search" action="#" method="get">
+    			<label class="search" for="header-search">Поиск по каталогу</label>
+          <input type="search" name="search" id="header-search" placeholder="Поиск по каталогу">
+          <button class="search-button" type="submit">Найти</button>
+    		</form>
+          <div class="user-menu header-user-menu">
+            <div class="user-login">
+              <ul class="login-list">
+                <li class="login-item">
+                  <a class="login-link" href="#">Войти</a>
                 </li>
               </ul>
-              <ul class="catalog-menu-items">
-                <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
+            </div>
+
+            <div class="user-actions">
+              <ul class="actions-list">
+                <li class="actions-item actions-compare">
+                  <a href="#">Сравнить</a>
                 </li>
-                <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="catalog-menu-items">
-                <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">Квадрокоптеры</a>
+                <li class="actions-item actions-cart">
+                  <a href="#">Корзина</a>
                 </li>
               </ul>
             </div>
           </div>
+        </div>
 
-          
-            <ul class="features-menu">
-              <li class="delivery">
-                <a class="feature-menu-link" href="#">Доставка</a>
-              </li>
-              <li class="warranty">
-                <a class="feature-menu-link" href="#">Гарантия</a>
-              </li>
-              <li class="contacts">
-                <a class="feature-menu-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          
+        <div class="header-botoom">
+          <nav class="main-menu">
+            <div class="catalog-menu">
+              <a href="#">Каталог товаров</a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu-list">
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Моноподы для селфи</a>
+                  </li>
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="dropdown-menu-list">
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="dropdown-menu-list">
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="service-menu">
+              <ul class="service-menu-list">
+                <li class="service-menu-item">
+                  <a class="service-menu-link" href="#">Доставка</a>
+                </li>
+                <li class="service-menu-item">
+                  <a class="service-menu-link" href="#">Гарантия</a>
+                </li>
+                <li class="service-menu-item">
+                  <a class="service-menu-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav> 
       </div>
   	</header>
   <main>
@@ -256,10 +264,10 @@
 
   <footer>
     <div class="footer-top">
-      <a class="footer-logo">
+      <a class="logo-link footer-logo">
         <img src="img/logo-footer.png" alt="Логотип магазина Device">
       </a>
-      <div class="user-menu">
+      <div class="user-menu footer-user-menu">
         <div class="user-login">
           <ul class="login-list">
             <li class="login-item">

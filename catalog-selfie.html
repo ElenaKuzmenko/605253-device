@@ -101,12 +101,69 @@
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Моноподы для селфи</a>
+        <li class="breadcrumbs-item breadcrumbs-current">
+          Моноподы для селфи
         </li>
       </ul>
     </div>
-
+    
+    <section class="filters">
+      <h2 class="filters-title">Фильтр:</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend class="filters-legend">Стоимость</legend>
+          <div class="range-controls">
+            <div class="bar">
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="range-price">
+              <span class="min">от 0</span>
+              <span class="max">до 5000</span>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="filters-legend">Цвет</legend>
+          <ul class="filter-color-list">
+            <li class="filter-color-item">
+              <input class="visually-hidden filter-checkbox" type="checkbox" id="black" name="black">
+              <label for="black">Черный</label>
+            </li>
+            <li class="filter-color-item">
+              <input class="visually-hidden filter-checkbox" type="checkbox" id="white" name="white">
+              <label for="white">Белый</label>
+            </li>
+            <li class="filter-color-item">
+              <input class="visually-hidden filter-checkbox" type="checkbox" id="blue" name="blue">
+              <label for="blue">Синий</label>
+            </li>
+            <li class="filter-color-item">
+              <input class="visually-hidden filter-checkbox" type="checkbox" id="red" name="red">
+              <label for="red">Красный</label>
+            </li>
+            <li class="filter-color-item">
+              <input class="visually-hidden filter-checkbox" type="checkbox" id="pink" name="pink">
+              <label for="pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="filters-legend">Bluetooth</legend>
+          <ul class="filter-bluetooth-list">
+            <li class="filter-bluetooth-item">
+              <input class="visually-hidden filter-radio" type="radio" id="bluetooth-yes" name="bluetooth">
+              <label for="bluetooth-yes">Есть</label>
+            </li>
+            <li class="filter-bluetooth-item">
+              <input class="visually-hidden filter-radio" type="radio" id="bluetooth-no" name="bluetooth">
+              <label for="bluetooth-no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button filter-button" type="submit">Показать</button>
+      </form>
+    </section>
 
   </main>
 

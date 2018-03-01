@@ -165,6 +165,86 @@
       </form>
     </section>
 
+    <section class="products">
+      <div class="sort-menu">
+        <h2 class="sort-title">Сортировка:</h2>
+        <ul class="sort-list">
+          <li class="sort-item">
+            <a class="sort-link" href="#">По цене</a>
+          </li>
+          <li class="sort-item">
+            <a class="sort-link" href="#">По типу</a>
+          </li>
+          <li class="sort-item">
+            <a class="sort-link" href="#">По популярности</a>
+          </li>
+        </ul>
+        <ul class="sort-controls">
+          <li class="control-item">
+            <a class="control-link control-ascending" href="#">по возрастанию</a>
+          </li>
+          <li class="control-item">
+            <a class="control-link control-descending" href="#">по убыванию</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="products-list">
+        <li class="product-item">
+          <img class="product-image" src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+          <p class="product-name">
+            <a href="item-1.html">Любительская селфи-палка</a>
+          </p>
+          <p class="product-price">500 руб.</p>
+          <a class="button product-cart" href="shopping-cart.html">В корзину</a>
+          <a class="product-compare" href="compare.html">Добавить к сравнению</a>
+        </li>
+        <li class="product-item">
+          <img class="product-image" src="img/item-2.jpg" alt="Профессиональная селфи-палка " width="360" height="380">
+          <p class="product-name">
+            <a href="item-1.html">Профессиональная селфи-палка </a>
+          </p>
+          <p class="product-price">1500 руб.</p>
+          <a class="button product-cart" href="shopping-cart.html">В корзину</a>
+          <a class="product-compare" href="compare.html">Добавить к сравнению</a>
+        </li>
+        <li class="product-item">
+          <img class="product-image" src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+          <p class="product-name">
+            <a href="item-1.html">Непотопляемая селфи-палка</a>
+          </p>
+          <p class="product-price">2500 руб.</p>
+          <a class="button product-cart" href="shopping-cart.html">В корзину</a>
+          <a class="product-compare" href="compare.html">Добавить к сравнению</a>
+        </li>
+        <li class="product-item new-product">
+          <img class="product-image" src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+          <p class="product-name">
+            <a href="item-1.html">Селфи-палка «Следуй за мной»</a>
+          </p>
+          <p class="product-price">4900 руб.</p>
+          <a class="button product-cart" href="shopping-cart.html">В корзину</a>
+          <a class="product-compare" href="compare.html">Добавить к сравнению</a>
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <a class="pagination-button pagination-previos">Назад</a>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-current">
+            <a class="pagination-link">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+        </ul>
+        <a class="pagination-button pagination-next" href="#">Вперед</a>
+      </div>
+    </section>
+
   </main>
 
 
@@ -233,15 +313,15 @@
     <h2 class="visually-hidden">Форма обратной связи. Напишите Нам.</h2>
     <form class="modal-form" action="post">
       <div class="modal-form-name">
-        <label for="name">Ваше имя: <br></label>
+        <label for="name">Ваше имя:</label>
         <input type="text" id="name" name="name" placeholder="Имя Фамилия">
       </div>
       <div class="modal-form-email">
-        <label for="e-mail">Ваш e-mail: <br></label>
+        <label for="e-mail">Ваш e-mail:</label>
         <input type="e-mail" id="e-mail" name="e-mail" placeholder="email@example.com">
       </div>
       <div class="modal-form-letter">
-        <label for="write-letter">Текст письма: <br></label>
+        <label for="write-letter">Текст письма:</label>
         <textarea name="letter" id="write-letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </div>
       <button class="modal-form-button button" type="submit">Отправить</button>

@@ -193,27 +193,23 @@
 
       <section class="service-slider">
         <h2 class="visually-hidden">Предоставляемые услуги</h2>
+        <input type="radio" id="slide-delivery" name="service-slide" checked>
+        <input type="radio" id="slide-warranty" name="service-slide">
+        <input type="radio" id="slide-credit" name="service-slide">
+        <div class="slide-control">
+          <label class="service-tab button" for="slide-delivery">Доставка</label>
+          <label class="service-tab button" for="slide-warranty">Гарантия</label>
+          <label class="service-tab button" for="slide-credit">Кредит</label>
+        </div>
         <article class=" service-slide slide-delivery">
-          <div class="selide-control">
-            <input type="radio" id="slide-delivery" name="service-slide" checked>
-            <label class="service-tab button" for="slide-delivery">Доставка</label>
-          </div>
           <h1 class="service-title">Доставка</h1>
           <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </article>
         <article class="service-slide slide-warranty">
-          <div class="selide-control">
-            <input type="radio" id="slide-warranty" name="service-slide">
-            <label class="service-tab button" for="slide-warranty">Гарантия</label>
-          </div>
           <h1 class="service-title">Гарантия</h1>
           <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </article>
         <article class="service-slide slide-credit">
-          <div class="selide-control">
-            <input type="radio" id="slide-credit" name="service-slide">
-            <label class="service-tab button" for="slide-credit">Кредит</label>
-          </div>
           <h1 class="service-title">Кредит</h1>
           <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </article>
@@ -226,10 +222,10 @@
               <img src="img/logo-dji.png" alt="логотип DJI" width="260" height="100">
           </li>
           <li class="partners-item">
-              <img src="img/logo-SPGadgets.png" alt="логотип SP Gadgets" width="260" height="100">
+              <img src="img/logo-spgadgets.png" alt="логотип SP Gadgets" width="260" height="100">
           </li>
           <li class="partners-item">
-              <img src="img/logo-GoPro.png" alt="логотип GoPro" width="260" height="100">
+              <img src="img/logo-gopro.png" alt="логотип GoPro" width="260" height="100">
           </li>
           <li class="partners-item">
               <img src="img/logo-vive.png" alt="логотип VIVE" width="260" height="100">
@@ -258,6 +254,7 @@
       <section class="contacts">
         <h2 class="section-title">Контакты</h2>
         <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <img src="img/map.jpg" alt="Карта" width="560" height="222">
         <a class="write-us button" href="#">Напишите нам</a>
       </section> 	
     </main>
@@ -348,7 +345,7 @@
 
     <section class="modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <img src="img/map.jpg" alt="Карта" width="560" height="222">
+      <img src="img/map-big.jpg.jpg" alt="Карта" width="960" height="559">
       <button class="modal-close">Close</button>
     </section>
     

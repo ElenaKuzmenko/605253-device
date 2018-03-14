@@ -3,28 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <div class="header-top-wrapper">
-        <p class="header__item logo">
-          <a class="logo__link" href="index.html">
-            <img class="logo__image" src="img/logo.png" alt="Логотип магазина Device" width="163" height="36">
-          </a>
-        </p>
-        <form class="header__search search" action="#" method="get">
-          <label class="search__name visually-hidden" for="header-search">Поиск по каталогу</label>
-          <input type="search__field" name="search" id="header-search" placeholder="Поиск по каталогу">
-          <button class="search__button" type="submit">Найти</button>
-        </form>
+        <div class="header-logo-search">
+          <p class="header__item logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__image" src="img/logo.png" alt="Логотип магазина Device" width="163" height="36">
+            </a>
+          </p>
+          <form class="header__search search" action="#" method="get">
+            <label class="search__name visually-hidden" for="header-search">Поиск по каталогу</label>
+            <input type="search__field" name="search" id="header-search" placeholder="Поиск по каталогу">
+            <button class="search__button" type="submit">Найти</button>
+          </form>
+        </div>
         <div class="header__menu user">  
           <ul class="user__login">
             <li class="login__item is-shown">
-              <a class="login__link" href="login.html">Войти</a>
+              <a class="login__link login__link--enter" href="login.html">Войти</a>
             </li>
             <li class="login__item is-hidden">
-              <a class="login__link" href="profile.html">Валентин Петухов</a>
+              <a class="login__link login__link--profile" href="profile.html">Валентин Петухов</a>
             </li>
             <li class="login__item is-hidden">
               <a class="login__link login__link--exit" href="logout.html">Выйти</a>
@@ -89,9 +93,9 @@
       <h1 class="visually-hidden">Главная страница магазина Device</h1>
     <!--Slider-->
       <section class="slider-promo">
-          <input type="radio" id="selfie-slide" name="slide-control" value="slide-selfie">
-          <input type="radio" id="fitnes-slide" name="slide-control" value="slide-fitnes">
-          <input type="radio" id="kvadrokopter-slide" name="slide-control" value="slide-kvadrokopter">
+          <input class="visually-hidden" type="radio" id="selfie-slide" name="slide-control" value="slide-selfie">
+          <input class="visually-hidden" type="radio" id="fitnes-slide" name="slide-control" value="slide-fitnes">
+          <input class="visually-hidden" type="radio" id="kvadrokopter-slide" name="slide-control" value="slide-kvadrokopter">
         <div class="slider-promo__controls controls-promo">
           <label class="controls-promo__item" for="selfie-slide">1</label>
           <label class="controls-promo__item" for="fitnes-slide">2</label>
@@ -216,20 +220,20 @@
         </article>
       </section>
 
-      <section class="partners">
-        <h2 class="visually-hidden">Наши партнеры</h2>
-        <ul class="partners__list">
-          <li class="partners__item">
-              <img src="img/logo-dji.png" alt="логотип DJI" width="260" height="100">
+      <section class="brands">
+        <h2 class="visually-hidden">Наши Бренды</h2>
+        <ul class="brands__list">
+          <li class="brands__item">
+              <img src="img/dji.png" alt="логотип DJI" width="260" height="100">
           </li>
-          <li class="partners__item">
-              <img src="img/logo-spgadgets.png" alt="логотип SP Gadgets" width="260" height="100">
+          <li class="brands__item">
+              <img src="img/spgadgets.png" alt="логотип SP Gadgets" width="260" height="100">
           </li>
-          <li class="partners__item">
-              <img src="img/logo-gopro.png" alt="логотип GoPro" width="260" height="100">
+          <li class="brands__item">
+              <img src="img/gopro.png" alt="логотип GoPro" width="260" height="100">
           </li>
-          <li class="partners__item">
-              <img src="img/logo-vive.png" alt="логотип VIVE" width="260" height="100">
+          <li class="brands__item">
+              <img src="img/vive.png" alt="логотип VIVE" width="260" height="100">
           </li>
         </ul>
       </section>
@@ -261,22 +265,23 @@
     </main>
 
     <footer class="footer">
-      <section class="footer__logo logo">
+      <div class="footer__logo logo">
         <a class="logo__link" href="index.html">
           <img src="img/logo-footer.png" alt="Логотип магазина Device" width="163" height="36">
         </a>
-      </section>
+      </div>
 
       <section class="footer__user-menu user">
+        <h2 class="visually-hidden">Пользовательское меню</h2>
         <ul class="user__login login">
-          <li class="login__item login__item--footer is-hidden">
+          <li class="login__item login__item--footer is-shown">
             <a class="login__link--footer" href="login.html">Войти</a>
           </li>
-          <li class="login__item login__item--footer is-shown">
-            <a class="login__link--foote" href="profile.html">Валентин Петухов</a>
+          <li class="login__item login__item--footer is-hidden">
+            <a class="login__link--footer" href="profile.html">Валентин Петухов</a>
           </li>
-          <li class="login__item login__item--footer is-shown">
-            <a class="login__link--foote login__link--exit" href="logout.html">Выйти</a>
+          <li class="login__item login__item--footer is-hidden">
+            <a class="login__link--footer login__link--exit" href="logout.html">Выйти</a>
           </li>
         </ul>
 
@@ -318,9 +323,9 @@
         </li>
       </ul>
 
-      <section class="footer__copyright">  
+      <div class="footer__copyright">  
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </section>
+      </div>
       
     </footer>
       

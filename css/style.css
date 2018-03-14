@@ -1,0 +1,491 @@
+@font-face {
+    font-family: "Gilroy", Arial, sans-serif;
+    src: url("fonts/gilroyextrabold.woff2");
+    src: url("fonts/gilroyextrabold.woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy", Arial, sans-serif;
+    src: url("fonts/gilroylight.woff2");
+    src: url("fonts/gilroylight.woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.button {
+    vertical-align: center;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.36px; /*  как описывать трекинг не знаю, и дальше тоже*/
+
+    background-image: linear-gradient(transparent 40%, #ffcc33 40%, #ffcc33 60%, transparent 60%, transparent 100%);
+
+}
+
+.button:hover,
+.button:focus {
+    background-color: #ffcc33;
+}
+
+.button:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #ffcc33;
+}
+
+.header {
+    background-color: #f7e296;
+}
+
+.logo {
+    margin: 0;  
+}
+
+.logo__link:hover,
+.logo__link:focus {
+    opacity: 0.6;
+}
+
+.logo__link:active {
+    opacity: 0.3;
+}
+
+/*Как быть с полем поиска еще не придумала, буду искать */
+
+.user__login,
+.header__menu {
+    padding: 0; 
+
+    letter-spacing: 0.001em;
+
+    list-style: none;
+}
+
+.login__link:hover,
+.actions__link:hover,
+.login__link:focus,
+.actions__link:focus {
+    opacity: 0.6;
+}
+
+.login__link:active,
+.actions__link:active {
+    opacity: 0.3;
+}
+
+.nav__list,
+.dropdown-menu__list {
+    padding: 0;
+
+    list-style: none;
+}
+
+.nav__list > li {
+    font-size: : 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;;
+    letter-spacing: 0.35em;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    opacity: 0.6;
+}
+
+.nav__link:active {
+    opacity: 0.3;
+}
+
+.dropdown-menu__item {
+    font-size: 15px;
+    line-height: 36px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0.001em;
+}
+
+.dropdown-menu__link:hover,
+.dropdown-menu__link:focus {
+    opacity: 0.6;
+}
+
+.dropdown-menu__link:active {
+    opacity: 0.3;
+}
+
+/* слайдер */
+
+.slider-promo__slogan {
+    font-size: 47px;
+    line-height: 56px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.001em;
+}
+
+.details__value {
+    font-size: 36px;
+    line-height: 48px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.001em;
+}
+
+.details__name {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 0.001em;
+    color: #333333;
+    text-align: left;
+}
+
+/******************************/
+
+.category__list {
+    padding: 0;
+    list-style: none;
+}
+
+.category__item {
+    
+}
+
+.category__name {
+    font-size: : 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+
+/*******  slider   ****/
+
+.service-slider__button:active {
+    color: #f7e184;
+    background: #000000;
+
+}
+
+.service-slider__item {
+    background-color: #e5e5e5;
+}
+
+.section-title {
+    margin: 0;
+
+    font-size: 47px;
+    line-height: 48px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.001em;
+}
+
+.service-slider__description {
+    margin: 0;
+
+    letter-spacing: 0.001em;
+}
+
+.brands__list {
+    padding: 0;
+
+    list-style: none;
+}
+/******/
+
+
+.about__transport {
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 40px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800; 
+
+    list-style: none;
+}
+
+
+
+/**  footer   **/
+
+.footer {
+    background-color: #464646;
+    color: #ffffff;
+}
+
+
+.footer-actions {
+    padding: 0;
+    list-style: none;
+}
+
+.login__link--footer,
+.footer-actions__link {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login__link--footer:hover,
+.footer-actions__link:hover,
+.login__link--footer:focus,
+.footer-actions__link:focus {
+    color: #ffffff;
+}
+
+.login__link--footer:active,
+.footer-actions__link:active,
+.login__link--footer:active,
+.footer-actions__link:active {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.footer__menu {
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800; 
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: #ffffff;
+}
+
+
+
+.footer__social {
+    padding: 0;
+    list-style: none;
+
+    /*font-size: 0;  когда вставим иконки*/
+}
+
+.main-menu__link:hover,
+.main-menu__link:focus {
+    opacity: 0.6;
+
+}
+
+.main-menu__link:active {
+    opacity: 0.3;
+}
+
+
+/** страница каталога **/
+
+
+.breadcrumbs {
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs__link {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: rgba(0,0,0, 0.3);
+}
+
+.filters {
+    background-color: #efefef;
+}
+
+.filters__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800; 
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+}
+
+.filters__legend {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.001em;
+}
+
+.range-price span {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    opacity: 0.2;
+}
+
+.filters--color,
+.filters--bluetooth {
+    padding: 0;
+    list-style: none;
+}
+
+.button[type="submit"],
+.button[type="button"],
+.product__compare {
+    border: none;
+    background-color: transparent;
+}
+
+.sort-menu__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.sort-menu__list,
+.sort-menu__controls {
+    padding: 0;
+    list-style: none;
+}
+
+.sort-menu__link {
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.3;
+}
+
+.sort-menu__link--active {
+    opacity: 1;
+}
+
+.product {
+    padding: 0;
+    list-style: none;
+}
+
+.product__name {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.001em;
+}
+
+.product__price {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.001em;
+    color: #464646;
+}
+
+.product__compare {
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0.001em;
+    opacity: 0.5;
+}
+
+.pagination {
+    background-color: #ebebeb;
+}
+
+.pagination-list {
+    padding: 0;
+    list-style: none;
+}
+
+.pagination__button {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.pagination__button:hover,
+.pagination__button:focus {
+    background-color: #d9d9d9;
+}
+
+.pagination__button:active {
+    background-color: #d9d9d9;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__link {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    opacity: 0.3;
+}
+
+.pagination__item--current {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.is-shown {
+    display: inline-block;
+}
+
+.is-hidden {
+    display: none;
+}

@@ -1,26 +1,57 @@
 @font-face {
-    font-family: "Gilroy", Arial, sans-serif;
-    src: url("fonts/gilroyextrabold.woff2");
-    src: url("fonts/gilroyextrabold.woff");
-    font-weight: 800;
-    font-style: normal;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Gilroy'), 
+       url(../fonts/gilroyextrabold.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Gilroy", Arial, sans-serif;
-    src: url("fonts/gilroylight.woff2");
-    src: url("fonts/gilroylight.woff");
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Gilroy'), 
+       url(../fonts/gilroyextrabold.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Gilroy'), 
+       url(../fonts/gilroylight.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Gilroy'), 
+       url(../fonts/gilroylight.woff) format('woff');
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.is-shown {
+    display: inline-block;
+}
+
+.is-hidden {
+    display: none;
+}
 
 html,
 body {
     margin: 0;
     padding: 0;
 
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
 }
@@ -31,14 +62,14 @@ a {
 }
 
 .button {
-    vertical-align: center;
+    vertical-align: middle;
 
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.36px; /*  как описывать трекинг не знаю, и дальше тоже*/
+    letter-spacing: 0.2em; /*  как описывать трекинг не знаю, и дальше тоже*/
 
     background-image: linear-gradient(transparent 40%, #ffcc33 40%, #ffcc33 60%, transparent 60%, transparent 100%);
 
@@ -104,11 +135,11 @@ a {
 .nav__list > li {
     font-size: : 18px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-style: normal;
     font-weight: 800;
     text-transform: uppercase;;
-    letter-spacing: 0.35em;
+    letter-spacing: 3.6px;
 }
 
 .nav__link:hover,
@@ -143,15 +174,15 @@ a {
 .slider-promo__slogan {
     font-size: 47px;
     line-height: 56px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-weight: 800;
-    letter-spacing: 0.001em;
+    
 }
 
 .details__value {
     font-size: 36px;
     line-height: 48px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-weight: 300;
     letter-spacing: 0.001em;
 }
@@ -179,7 +210,7 @@ a {
 .category__name {
     font-size: : 18px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800;
 }
@@ -202,7 +233,7 @@ a {
 
     font-size: 47px;
     line-height: 48px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800;
     letter-spacing: 0.001em;
@@ -227,7 +258,7 @@ a {
 
     font-size: 16px;
     line-height: 40px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800; 
 
@@ -276,7 +307,7 @@ a {
 .main-menu__link {
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800; 
     text-transform: uppercase;
@@ -326,7 +357,7 @@ a {
 .filters__title {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800; 
     text-transform: uppercase;
@@ -336,7 +367,7 @@ a {
 .filters__legend {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800;
     letter-spacing: 0.001em;
@@ -345,7 +376,7 @@ a {
 .range-price span {
     font-size: 14px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 300;
     opacity: 0.2;
@@ -367,7 +398,7 @@ a {
 .sort-menu__title {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800;
     text-transform: uppercase;
@@ -397,7 +428,7 @@ a {
 .product__name {
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800;
     letter-spacing: 0.001em;
@@ -406,7 +437,7 @@ a {
 .product__price {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 300;
     letter-spacing: 0.001em;
@@ -433,7 +464,7 @@ a {
 .pagination__button {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800;
     text-transform: uppercase;
@@ -452,7 +483,7 @@ a {
 .pagination__link {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800;
     opacity: 0.3;
@@ -461,7 +492,7 @@ a {
 .pagination__item--current {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 800;
     opacity: 1;
@@ -474,18 +505,3 @@ a {
 
 
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
-
-.is-shown {
-    display: inline-block;
-}
-
-.is-hidden {
-    display: none;
-}

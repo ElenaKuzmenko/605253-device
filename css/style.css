@@ -102,6 +102,31 @@ a {
     opacity: 0.3;
 }
 
+.header__search {
+    width: 440px;
+}
+
+.search__name {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/search-icon.svg);
+    background-repeat: no-repeat;
+}
+
+.header__search input {
+    border: 0;
+}
+
+.search__field {
+    background-color: #f7e296;
+    
+}
+
+.search__button {
+    background-color: transparent;
+    border: 0;
+}
+
 /*Как быть с полем поиска еще не придумала, буду искать */
 
 .user__login,
@@ -203,8 +228,41 @@ a {
     list-style: none;
 }
 
-.category__item {
+.category__name::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+
+    background-color: #f7e296;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.name-virtual::before {
+    background-image: url(../img/virtual.svg);
     
+}
+
+.name-selfie::before {
+    background-image: url(../img/selfie-stick.svg);
+    background-position: center bottom;   
+}
+
+.name-camera::before {
+    background-image: url(../img/action-camera.svg);
+}
+
+.name-fitnes::before {
+    background-image: url(../img/fitnes.svg);
+}
+
+.name-watches::before {
+    background-image: url(../img/watches.svg);
+}
+
+.name-kvadrokopter::before {
+    background-image: url(../img/kvadrokopter.svg);
 }
 
 .category__name {
@@ -214,6 +272,18 @@ a {
     font-style: normal;
     font-weight: 800;
 }
+
+.category__item:hover .category__name::before,
+.category__item:focus .category__name::before {
+    background-color: #f0c52e;
+}
+
+/***
+.category__item:active .name-virtual::before {
+    opacity: 0.3;
+
+}
+    тут надо подумать как давать прозрачность только изображению
 
 
 /*******  slider   ****/
@@ -225,7 +295,26 @@ a {
 }
 
 .service-slider__item {
+    min-height: 200px;
     background-color: #e5e5e5;
+}
+
+.service-slider__item--delivery {
+    background-image: url(../img/delivery.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.service-slider__item--warranty {
+    background-image: url(../img/warranty.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.service-slider__item--credit {
+    background-image: url(../img/credit.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
 .section-title {

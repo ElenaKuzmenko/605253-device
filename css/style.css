@@ -729,13 +729,13 @@ a {
 .content-wrap {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
 }
 
 .filters {
     padding-right: 68px;
     margin-left: auto;
     background-color: #efefef;
+    flex-grow: 1;
 }
 
 .filters-title-wrap {

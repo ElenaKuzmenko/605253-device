@@ -859,7 +859,7 @@ a {
     padding-top: 70px;
     padding-bottom: 75px;
     padding-left: 70px; 
-    width: 833px;
+    width: 760px;
 
     list-style: no-repeat;
     background-color: #ffffff;  
@@ -893,10 +893,17 @@ a {
 }
 
 .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 760px;
+    height: 70px;
+    margin-left: 70px;
     background-color: #ebebeb;
 }
 
 .pagination-list {
+    display: flex;
     padding: 0;
     list-style: none;
 }

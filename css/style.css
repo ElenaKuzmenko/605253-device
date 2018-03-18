@@ -363,7 +363,7 @@ a {
 .category__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 180px;
+    margin-bottom: 110px;
     padding: 0;
     list-style: none;
 }
@@ -861,8 +861,12 @@ a {
     padding-left: 70px; 
     width: 760px;
 
-    list-style: no-repeat;
+    list-style: none;
     background-color: #ffffff;  
+}
+
+.product__item {
+    width: 360px;
 }
 
 .product__name {

@@ -50,14 +50,16 @@ a {
 
 .button {
     display: block;
+    padding: 6px 0;
 
     font-size: 18px;
     line-height: 24px;
     font-family: 'Gilroy', Arial, sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.2em; /*  как описывать трекинг не знаю, и дальше тоже*/
+    letter-spacing: 0.2em; 
     text-align: center;
+    
 
     background-image: linear-gradient(transparent 40%, #ffcc33 40%, #ffcc33 60%, transparent 60%, transparent 100%);
 
@@ -89,8 +91,10 @@ a {
     letter-spacing: 0.015em;
 }
 
+/* шапка сайта */
+
 .header {
-    min-height: 300px;
+    min-height: 182px;
     margin-top: 40px;
     background-color: #f7e296;
 }
@@ -98,7 +102,7 @@ a {
 .header-top-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 37px;
+    margin-bottom: 39px;
     padding: 0 60px;
 }
 
@@ -121,42 +125,47 @@ a {
     opacity: 0.3;
 }
 
+/* поле поиска */
 .header__search {
+    position: relative;
     width: 500px;
 }
 
-.search::before {
-    content: "";
-    display: inline-block; /*тут будет абсолютное позиционирование в паддинг инпута, а пока так*/
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
+.search__name {
+    position: absolute;
+    bottom: -2px;
+    left: 2px;
+    width: 25px;
+    height: 25px;
+
     background-image: url(../img/search-icon.svg);
     background-repeat: no-repeat;
-
+    background-position: 0 0;
 }
 
 .header__search input {
+    width: 317px;
+    padding-left: 40px;
+
+    background-color: #f7e296;
     border: 0;
 }
-
-.search__field {
-    background-color: #f7e296;
-    
-}
-
 
 .search__button {
     background-color: transparent;
     border: 0;
 }
 
-/*Как быть с полем поиска еще не придумала, буду искать */
+/* пользовательское меню */
+
 .user {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 500px;
+}
+.user .login__item {
+    margin-right: 17px;
 }
 
 .actions {
@@ -167,13 +176,53 @@ a {
 }
 
 .user__login,
-.header__menu {
+.actions {
     margin: 0;
     padding: 0; 
 
-    letter-spacing: 0.001em;
-
     list-style: none;
+}
+
+.user__login .login__link:not(.login__link--exit),
+.actions__link {
+    position: relative;
+    padding-left: 26px;
+}
+
+.login__link--enter::before,
+.login__link--profile::before,
+.actions__link--compare::before,
+.actions__link--cart::before {
+    content: "";
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.login__link--enter::before,
+.login__link--profile::before {
+    top: 4px;
+    left: 0;
+
+    background-image: url(../img/user-icon.svg);
+}
+
+.actions__link--compare::before {
+    top: 5px;
+    left: 8px;
+
+    background-image: url(../img/compare-icon.svg);
+}
+
+.actions__link--cart::before {
+    top: 4px;
+    left: 6px;
+
+    background-image: url(../img/cart-icon.svg);
 }
 
 .login__link:hover,
@@ -188,8 +237,10 @@ a {
     opacity: 0.3;
 }
 
+/* основное меню - главная навигация */
+
 .header__nav {
-    padding: 0 60px;
+    padding: 0 58px;
 }
 
 .nav__list {
@@ -224,13 +275,6 @@ a {
     text-align: right;
 }
 
-.dropdown-menu__list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
 .nav__link:hover,
 .nav__link:focus {
     opacity: 0.6;
@@ -238,6 +282,15 @@ a {
 
 .nav__link:active {
     opacity: 0.3;
+}
+
+/* выпадающее меню */
+
+.dropdown-menu__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
 .dropdown-menu-wrapper {
@@ -278,7 +331,7 @@ a {
     opacity: 0.3;
 }
 
-/* слайдер */
+/* слайдер промо*/
 .slider-promo {
     position: relative;
 }
@@ -289,7 +342,8 @@ a {
 
 .slider-promo__item {
     display: flex;
-
+    
+    background-image: linear-gradient(#f7e296 115px, transparent 115px, transparent 100%);
 }
 
 .slider-promo__content {
@@ -303,7 +357,7 @@ a {
 }
 
 .slider-promo__item .slider-promo__slogan {
-    padding-top: 87px;
+    padding-top: 85px;
     padding-bottom: 20px;         
     font-size: 47px;
     line-height: 56px;
@@ -313,19 +367,17 @@ a {
 }
 
 .slider-promo__description {
-    width: 480px;
+    width: 485px;
     margin: 0;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
 
     font-weight: 300;
-    letter-spacing: 0.001em;   /* тут не могу подогнать ширину текста */
+    letter-spacing: 0.015em;
 }
 
 .slider-promo__item .button {
     width: 220px;
-    height: 40px;
     margin-bottom: 46px;
-    line-height: 40px;
 }
 
 .slider-promo__details {
@@ -358,7 +410,7 @@ a {
     text-align: left;
 }
 
-/******************************/
+/* список категорий */
 
 .category__list {
     display: flex;
@@ -406,7 +458,7 @@ a {
 }
 
 .category__name {
-    font-size: : 18px;
+    font-size: 18px;
     line-height: 24px;
     font-family: 'Gilroy', Arial, sans-serif;
     font-style: normal;
@@ -418,15 +470,8 @@ a {
     background-color: #f0c52e;
 }
 
-/***
-.category__item:active .name-virtual::before {
-    opacity: 0.3;
 
-}
-    тут надо подумать как давать прозрачность только изображению
-
-
-/*******  slider   ****/
+/*******  slider услуг   ****/
 .service-slider {
    background-image: linear-gradient(#ffffff 120px, #e5e5e5 120px);
 }
@@ -448,9 +493,6 @@ a {
 
 .service-slider__button {
     width: 160px;
-    height: 40px;
-
-    line-height: 40px;
 }
 
 .service-slider__button:first-child,
@@ -458,15 +500,6 @@ a {
     margin-bottom: 25px;
 }
 
-/* еще придумаю как сделать
-
-.service-slider input:checked .service-slider__button {
-    padding-right: 120px;
-    color: #f7e184;
-    background: #000000;
-
-}
-*/
 .slider-content {
     flex-grow: 1;
     margin-top: 93px;
@@ -512,14 +545,12 @@ a {
 
     list-style: none;
 }
-/******/
+/***контакты и О нас***/
 .wrap-contacts-about {
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
 }
-
-
 
 .about__transport {
     padding: 0;
@@ -627,14 +658,11 @@ a {
     display: flex;
     padding: 0;
     list-style: none;
-
-    /*font-size: 0;  когда вставим иконки*/
 }
 
 .main-menu__link:hover,
 .main-menu__link:focus {
     opacity: 0.6;
-
 }
 
 .main-menu__link:active {
@@ -677,13 +705,12 @@ a {
 .form__button {
     align-self: flex-start;
     width: 200px;
-    height: 40px;
 }
 
-
-
-
 /** страница каталога **/
+
+/* шапка */
+
 .header-inner {
     min-height: 185px;
     margin-bottom: 36px;
@@ -697,6 +724,8 @@ a {
 .content h1 {
     margin-bottom: 20px;
 }
+
+/* хлебные крошки */
 
 .breadcrumbs {
     display: flex;
@@ -725,12 +754,14 @@ a {
     color: rgba(0,0,0, 0.3);
 }
 
+/* основное содержимое */
 
 .content-wrap {
     display: flex;
     justify-content: center;
 }
 
+/* фильтры */
 .filters {
     padding-right: 68px;
     margin-left: auto;
@@ -791,11 +822,15 @@ a {
     background-color: transparent;
 }
 
+/* продукция */
+
 .products {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
+
+/* сортировка */
 
 .sort-wrap {
     background-color: #efefef;
@@ -851,6 +886,8 @@ a {
     opacity: 1;
 }
 
+/* собственно сами товары */
+
 .product {
     display: flex;
     justify-content: space-between;
@@ -895,6 +932,7 @@ a {
     letter-spacing: 0.001em;
     opacity: 0.5;
 }
+/* нижняя навигация */
 
 .pagination {
     display: flex;

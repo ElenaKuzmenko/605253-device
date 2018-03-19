@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -17,7 +18,7 @@
             </a>
           </p>
           <form class="header__search search" action="#" method="get">
-            <label class="search__name visually-hidden" for="header-search">Поиск по каталогу</label>
+            <label class="search__name" for="header-search" aria-label="Поиск по каталогу"></label>
             <input class="search__field" type="search" name="search" id="header-search" placeholder="Поиск по каталогу">
             <button class="search__button" type="submit">Найти</button>
           </form>
@@ -49,6 +50,32 @@
         <ul class="nav__list">
           <li class="nav__item--catalog dropdown-menu">
             <a class="nav__link dropdown-menu__link" href="catalog.html">Каталог товаров</a>
+            <div class="dropdown-menu-wrapper visually-hidden">
+              <ul class="dropdown-menu__list video">
+                <li class="dropdown-menu__item video__item">
+                  <a class="dropdown-menu__link" href="virtual.html">Виртуальная реальность</a>
+                </li>
+                <li class="dropdown-menu__item video__item">
+                  <a class="dropdown-menu__link" href="selfie.html">Моноподы для селфи</a>
+                </li>
+                <li class="dropdown-menu__item video__item">
+                  <a class="dropdown-menu__link" href="camera.html">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="dropdown-menu__list fitnes">
+                <li class="dropdown-menu__item fitnes__item">
+                  <a class="dropdown-menu__link" href="fitnes.html">Фитнес-браслеты</a>
+                </li>
+                <li class="dropdown-menu__item fitnes__item">
+                  <a class="dropdown-menu__link" href="watches.html">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="dropdown-menu__list kvadrokopter">
+                <li class="dropdown-menu__item kvadrokopter__item">
+                  <a class="dropdown-menu__link" href="kvardokopter.html">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="delivery.html">Доставка</a>
@@ -60,32 +87,6 @@
             <a class="nav__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
-        <div class="dropdown-menu-wrapper">
-          <ul class="dropdown-menu__list video">
-            <li class="dropdown-menu__item video__item">
-              <a class="dropdown-menu__link" href="virtual.html">Виртуальная реальность</a>
-            </li>
-            <li class="dropdown-menu__item video__item">
-              <a class="dropdown-menu__link" href="selfie.html">Моноподы для селфи</a>
-            </li>
-            <li class="dropdown-menu__item video__item">
-              <a class="dropdown-menu__link" href="camera.html">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="dropdown-menu__list fitnes">
-            <li class="dropdown-menu__item fitnes__item">
-              <a class="dropdown-menu__link" href="fitnes.html">Фитнес-браслеты</a>
-            </li>
-            <li class="dropdown-menu__item fitnes__item">
-              <a class="dropdown-menu__link" href="watches.html">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="dropdown-menu__list kvadrokopter">
-            <li class="dropdown-menu__item kvadrokopter__item">
-              <a class="dropdown-menu__link" href="kvardokopter.html">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
       </nav>
     </header>
 

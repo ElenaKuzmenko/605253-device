@@ -582,10 +582,16 @@ a {
 }
 
 .brands__item img {
-    filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .brands__item img:hover {
+    -webkit-filter: none;
+    -o-filter: none;
     filter: none;
 }
 /***контакты и О нас***/
@@ -593,6 +599,14 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
+}
+
+.about {
+    width: 460px;
+}
+
+.contacts {
+    width: 560px;
 }
 
 .about__transport {
@@ -606,6 +620,13 @@ a {
 
     list-style: none;
 }
+
+.about__button,
+.contacts__button {
+    width: 260px;
+}
+
+
 
 
 
@@ -805,8 +826,9 @@ a {
 }
 
 /* фильтры */
-.filters {   
-    background-color: #efefef;
+.filters {  
+    background-image: linear-gradient(#dbdbdb 70px, #efefef 70px, #efefef 100%); 
+    
     flex-grow: 1;
 }
 

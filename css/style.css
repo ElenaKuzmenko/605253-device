@@ -415,9 +415,32 @@ a {
 .category__list {
     display: flex;
     justify-content: space-between;
+    margin: 0;
     margin-bottom: 110px;
     padding: 0;
     list-style: none;
+}
+
+.category__item {
+    position: relative;
+    width: 160px;
+}
+
+.category__name {
+    box-sizing: border-box;
+    padding-top: 160px;
+    
+}
+
+.category__name span {
+    display: inline-block;
+    padding-top: 32px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.01em;
 }
 
 .category__name::before {
@@ -426,48 +449,60 @@ a {
     width: 160px;
     height: 160px;
 
+    letter-spacing: 0.01em;
     background-color: #f7e296;
+}
+
+.category__name::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+    
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.name-virtual::before {
+.name-virtual::after {
     background-image: url(../img/virtual.svg);
+       
+}
+
+.name-selfie::after {
+    background-image: url(../img/selfie-stick.svg); 
+    background-position: center bottom;
+}
+
+.name-camera::after {
+    background-image: url(../img/action-camera.svg);
     
 }
 
-.name-selfie::before {
-    background-image: url(../img/selfie-stick.svg);
-    background-position: center bottom;   
-}
-
-.name-camera::before {
-    background-image: url(../img/action-camera.svg);
-}
-
-.name-fitnes::before {
+.name-fitnes::after {
     background-image: url(../img/fitnes.svg);
+    
 }
 
-.name-watches::before {
+.name-watches::after {
     background-image: url(../img/watches.svg);
+    
 }
 
-.name-kvadrokopter::before {
+.name-kvadrokopter::after {
     background-image: url(../img/kvadrokopter.svg);
+    
 }
 
-.category__name {
-    font-size: 18px;
-    line-height: 24px;
-    font-family: 'Gilroy', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-}
-
-.category__item:hover .category__name::before,
-.category__item:focus .category__name::before {
+.category__name:hover::before,
+.category__name:focus::before,
+.category__name:active::before {
     background-color: #f0c52e;
+}
+
+.category__name:active::after {
+    opacity: 0.3;
 }
 
 
@@ -544,6 +579,14 @@ a {
     padding: 0;
 
     list-style: none;
+}
+
+.brands__item img {
+    filter: grayscale(1);
+}
+
+.brands__item img:hover {
+    filter: none;
 }
 /***контакты и О нас***/
 .wrap-contacts-about {
@@ -762,16 +805,16 @@ a {
 }
 
 /* фильтры */
-.filters {
-    padding-right: 68px;
-    margin-left: auto;
+.filters {   
     background-color: #efefef;
     flex-grow: 1;
 }
 
-.filters-title-wrap {
-    height: 70px;
-    background-color: #dcdcdc;
+.filters-wrap {
+    width: 200px;
+    padding-right: 67px;
+    padding-left: 60px;
+    margin-left: auto;
 }
 
 .filters__title {
@@ -784,12 +827,12 @@ a {
     font-weight: 800; 
     text-transform: uppercase;
     letter-spacing: 0.35em;
-}
+} 
 
-.filters form {
+/* .filters form {
     width: 200px;
     margin-left: auto;
-}
+} */
 
 .filters__legend {
     font-size: 16px;

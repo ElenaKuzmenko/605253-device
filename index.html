@@ -10,19 +10,18 @@
   </head>
   <body>
     <header class="header container">
-      <div class="header-top-wrapper">
-        <div class="header-logo-search">
-          <p class="header__item logo">
-            <a class="logo__link" href="index.html">
-              <img class="logo__image" src="img/logo.png" alt="Логотип магазина Device" width="163" height="36">
-            </a>
-          </p>
-          <form class="header__search search" action="#" method="get">
-            <label class="search__name" for="header-search" aria-label="Поиск по каталогу"></label>
-            <input class="search__field" type="search" name="search" id="header-search" placeholder="Поиск по каталогу">
-            <button class="search__button" type="submit">Найти</button>
-          </form>
-        </div>
+      <p class="header__item logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__image" src="img/logo.png" alt="Логотип магазина Device" width="163" height="36">
+        </a>
+      </p>
+      <div class="user-block">
+        <form class="header__search search" action="#" method="get">
+          <label class="search__name" for="header-search" aria-label="Поиск по каталогу"></label>
+          <input class="search__field" type="search" name="search" id="header-search" placeholder="Поиск по каталогу">
+          <button class="search__button" type="submit">Найти</button>
+        </form>
+
         <div class="header__menu user">  
           <ul class="user__login">
             <li class="login__item is-shown">
@@ -124,7 +123,7 @@
           </div>
         </div>
 
-        <div class="slider-promo__item">
+        <div class="slider-promo__item visually-hidden">
           <img src="img/slider-2.png" alt="Фитнес-браслет" width="560" height="500">
           <div class="slider-promo__content">
             <h2 class="slider-promo__slogan section-title">Худеем<br> правильно!</h2>
@@ -141,7 +140,7 @@
           </div>
         </div>
 
-        <div class="slider-promo__item">
+        <div class="slider-promo__item visually-hidden">
           <img src="img/slider-3.png" alt="Квадрокоптер" width="560" height="500">
           <div class="slider-promo__content">
             <h2 class="slider-promo__slogan section-title">Порхает как бабочка, жалит как пчела!</h2>
@@ -243,29 +242,33 @@
         </ul>
       </section>
 
-      <div class="wrap-contacts-about container">
+      <div class="info-block container">
         <section class="about">
-          <h2 class=" about__title section-title">О нас</h2>
-          <p class="about__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="about__description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="about__transport transport">
-            <li class="transport__item">
-              Деловые Линии
-            </li>
-            <li class="transport__item">
-              Автотрейдинг
-            </li>
-            <li class="transport__item">
-              ЖелДорЭкспедиция
-            </li>
-          </ul>
+          <div class="about-wrap">
+            <h2 class=" about__title section-title">О нас</h2>
+            <p class="about__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="about__description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="about__transport transport">
+              <li class="transport__item">
+                Деловые Линии
+              </li>
+              <li class="transport__item">
+                Автотрейдинг
+              </li>
+              <li class="transport__item">
+                ЖелДорЭкспедиция
+              </li>
+            </ul>
+          </div>
           <a class="about__button button" href="about.html">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
-          <h2 class="contacts__title section-title">Контакты</h2>
-          <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="img/map.jpg" width="560" height="222" alt="Наш офис находится по адресу: г. Москва, ул. Строителей, 15">
+          <div class="contacts-wrap">
+            <h2 class="contacts__title section-title">Контакты</h2>
+            <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <img src="img/map.jpg" width="560" height="222" alt="Наш офис находится по адресу: г. Москва, ул. Строителей, 15">
+          </div>
           <a class="contacts__button button" href="#">Напишите нам</a>
         </section> 
       </div> 
@@ -282,13 +285,13 @@
             <h2 class="visually-hidden">Пользовательское меню</h2>
             <ul class="user__login login">
               <li class="login__item login__item--footer is-shown">
-                <a class="login__link--footer" href="login.html">Войти</a>
+                <a class="login__link login__link--footer" href="login.html">Войти</a>
               </li>
               <li class="login__item login__item--footer is-hidden">
-                <a class="login__link--footer" href="profile.html">Валентин Петухов</a>
+                <a class="login__link login__link--footer" href="profile.html">Валентин Петухов</a>
               </li>
               <li class="login__item login__item--footer is-hidden">
-                <a class="login__link--footer login__link--exit" href="logout.html">Выйти</a>
+                <a class="login__link login__link--footer login__link--exit" href="logout.html">Выйти</a>
               </li>
             </ul>
 

@@ -47,6 +47,10 @@ a {
     text-decoration: none;
     color: #000000;
 }
+img {
+  width: 100%;
+  height: auto;
+}
 
 .button {
     display: block;
@@ -94,26 +98,17 @@ a {
 /* шапка сайта */
 
 .header {
-    min-height: 182px;
-    margin-top: 40px;
-    background-color: #f7e296;
-}
-
-.header-top-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 39px;
-    padding: 0 60px;
-}
-
-.header-logo-search {
-    width: 500px;
+    min-height: 225px;
+    background-image: linear-gradient(#ffffff 40px, #f7e296 40px, #f7e296 100%);
 }
 
 .logo {
+    width: 163px;
+    height: 36px;
     margin: 0;
-    margin-top: -20px;
-    margin-bottom: 18px;  
+    margin-bottom: 25px;
+    padding-top: 22px;
+    padding-left: 60px;
 }
 
 .logo__link:hover,
@@ -125,7 +120,17 @@ a {
     opacity: 0.3;
 }
 
+.user-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0 60px;
+}
+
+
+
 /* поле поиска */
+
 .header__search {
     position: relative;
     width: 500px;
@@ -212,8 +217,8 @@ a {
 }
 
 .actions__link--compare::before {
-    top: 5px;
-    left: 8px;
+    top: 7px;
+    left: 7px;
 
     background-image: url(../img/compare-icon.svg);
 }
@@ -334,6 +339,8 @@ a {
 /* слайдер промо*/
 .slider-promo {
     position: relative;
+    min-height: 500px;
+    margin-bottom: 90px;
 }
 
 .slider-promo__controls {
@@ -341,13 +348,16 @@ a {
 } 
 
 .slider-promo__item {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    
+    justify-content: space-between;
     background-image: linear-gradient(#f7e296 115px, transparent 115px, transparent 100%);
 }
 
 .slider-promo__content {
-    width: 500px;
+    padding-right: 75px;
 }
 
 .slider-promo__item img {
@@ -416,7 +426,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 110px;
+    margin-bottom: 60px;
     padding: 0;
     list-style: none;
 }
@@ -434,7 +444,7 @@ a {
 
 .category__name span {
     display: inline-block;
-    padding-top: 32px;
+    padding-top: 37px;
     font-size: 18px;
     line-height: 24px;
     font-family: 'Gilroy', Arial, sans-serif;
@@ -508,13 +518,14 @@ a {
 
 /*******  slider услуг   ****/
 .service-slider {
+   min-width: 1200px;
    background-image: linear-gradient(#ffffff 120px, #e5e5e5 120px);
 }
 
 .service-slider .container {
     display: flex;
     min-height: 408px;
-    margin-bottom: 90px;
+    margin-bottom: 93px;
 }
 
 .service-slider__controls {
@@ -530,9 +541,8 @@ a {
     width: 160px;
 }
 
-.service-slider__button:first-child,
-.service-slider__button:nth-child(2) {
-    margin-bottom: 25px;
+.service-slider__button {
+    margin-bottom: 30px;
 }
 
 .slider-content {
@@ -575,18 +585,18 @@ a {
 .brands__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 84px;
     padding: 0;
 
     list-style: none;
 }
 
 .brands__item img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .brands__item img:hover {
@@ -595,22 +605,51 @@ a {
     filter: none;
 }
 /***контакты и О нас***/
-.wrap-contacts-about {
+.info-block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 90px;
+    margin-bottom: 85px;
 }
 
-.about {
-    width: 460px;
-}
-
+.about,
 .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 560px;
 }
 
+.about::before,
+.contacts::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 7px;
+    margin-bottom: 45px;
+    background-color: #000000;
+}
+
+.about-wrap {
+    padding-right: 90px;
+}
+
+.about__title,
+.contacts__title {
+    margin-bottom: 45px;
+}
+
+.about__description,
+.contacts__description {
+    margin: 0;
+    padding-bottom: 30px;
+  
+}
 .about__transport {
     padding: 0;
+    margin: 0;
+    padding-left: 35px;
+    margin-top: 5px;
+    margin-bottom: 56px;
 
     font-size: 16px;
     line-height: 40px;
@@ -621,9 +660,12 @@ a {
     list-style: none;
 }
 
+
+
 .about__button,
 .contacts__button {
     width: 260px;
+  margin-top: auto;
 }
 
 
@@ -633,14 +675,10 @@ a {
 /**  footer   **/
 
 .footer {
+    min-width: 1200px;
     padding: 65px 0;
     background-color: #464646;
     color: #ffffff;
-}
-
-.footer__logo {
-    margin: 0;
-    width: 500px;
 }
 
 .footer-top {
@@ -649,9 +687,17 @@ a {
     align-items: flex-start;
 }
 
+.footer__logo {
+    margin: 0;
+    padding: 0;
+    width: 163px;
+    height: 36px;
+}
+
+
 .footer__user-menu {
-    justify-content: space-between;
-    width: auto;
+    justify-content: flex-end;
+    
 }
 
 .footer-actions {
@@ -659,12 +705,56 @@ a {
     justify-content: flex-end;
     margin: 0;
     padding: 0;
+    margin-left: 17px;
     list-style: none;
 }
+
+.login__link--footer,
+.footer-actions__link {
+  position: relative;
+  padding-left: 27px;
+  
+}
+
+.login__link--footer:not(.login__link--exit)::before,
+.footer-actions__link::before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  
+  background-image: url(../img/footer-user.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-actions__link--compare::before {
+  top: 4px;
+  left: 8px;
+  background-image: url(../img/footer-compare.svg);
+}
+
+.footer-actions__link--cart::before {
+  left: 6px;
+  background-image: url(../img/footer-cart-icon.svg);
+}
+
+.footer-actions__link--cart {
+  margin-left: 35px;
+}
+
 
 .footer-middle {
     display: flex;
     justify-content: space-between;
+}
+
+,footer-middle p,
+.footer-middle ul {
+  margin: 0;
 }
 
 .footer__menu {
@@ -710,7 +800,17 @@ a {
 
 .footer-bottom {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  
+  background-color: #ffc600;
 }
 
 .footer__social,

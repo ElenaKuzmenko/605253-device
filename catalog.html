@@ -48,6 +48,32 @@
         <ul class="nav__list">
           <li class="nav__item--catalog dropdown-menu">
             <a class="nav__link dropdown-menu__link" href="catalog.html">Каталог товаров</a>
+            <div class="dropdown-menu-wrapper">
+          <ul class="dropdown-menu__list video">
+            <li class="dropdown-menu__item video__item">
+              <a class="dropdown-menu__link" href="virtual.html">Виртуальная реальность</a>
+            </li>
+            <li class="dropdown-menu__item video__item">
+              <a class="dropdown-menu__link" href="selfie.html">Моноподы для селфи</a>
+            </li>
+            <li class="dropdown-menu__item video__item">
+              <a class="dropdown-menu__link" href="camera.html">Экшн-камеры</a>
+            </li>
+          </ul>
+          <ul class="dropdown-menu__list fitnes">
+            <li class="dropdown-menu__item fitnes__item">
+              <a class="dropdown-menu__link" href="fitnes.html">Фитнес-браслеты</a>
+            </li>
+            <li class="dropdown-menu__item fitnes__item">
+              <a class="dropdown-menu__link" href="watches.html">Умные часы</a>
+            </li>
+          </ul>
+          <ul class="dropdown-menu__list kvadrokopter">
+            <li class="dropdown-menu__item kvadrokopter__item">
+              <a class="dropdown-menu__link" href="kvardokopter.html">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="delivery.html">Доставка</a>
@@ -59,32 +85,7 @@
             <a class="nav__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
-        <div class="dropdown-menu-wrapper is-hidden">
-          <ul class="dropdown-menu__list video is-hidden">
-            <li class="dropdown-menu__item video__item">
-              <a class="dropdown-menu__link" href="virtual.html">Виртуальная реальность</a>
-            </li>
-            <li class="dropdown-menu__item video__item">
-              <a class="dropdown-menu__link" href="selfie.html">Моноподы для селфи</a>
-            </li>
-            <li class="dropdown-menu__item video__item">
-              <a class="dropdown-menu__link" href="camera.html">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="dropdown-menu__list fitnes is-hidden">
-            <li class="dropdown-menu__item fitnes__item">
-              <a class="dropdown-menu__link" href="fitnes.html">Фитнес-браслеты</a>
-            </li>
-            <li class="dropdown-menu__item fitnes__item">
-              <a class="dropdown-menu__link" href="watches.html">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="dropdown-menu__list kvadrokopter is-hidden">
-                <li class="dropdown-menu__item kvadrokopter__item">
-                  <a class="dropdown-menu__link" href="kvardokopter.html">Квадрокоптеры</a>
-                </li>
-          </ul>
-        </div>
+        
       </nav>
     </header>
 
@@ -115,8 +116,20 @@
               <legend class="filters__legend">Стоимость</legend>
               <div class="range-controls">
                 <div class="range-controls__bar">
-                  <div class="range-controls__toggle range-controls__toggle--min"></div>
-                  <div class="range-controls__toggle range-controls__toggle--max"></div>
+                  <button class="range-controls__toggle range-controls__toggle--min" type="button">
+                    <svg width="20px" height="23px" viewBox="0 0 20 23" enable-background="new 0 0 20 23" xml:space="preserve">
+                      <path opacity="0.3" fill="#ABABAB" d="M10,20C4.477,20,0,15.522,0,10v2c0,5.522,4.477,10,10,10c5.522,0,10-4.478,10-10v-2 C20,15.522,15.522,20,10,20z"/>
+                      <circle fill="#FFFFFF" cx="10" cy="10" r="10"/>
+                      <circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+                    </svg>
+                  </button>
+                  <button class="range-controls__toggle range-controls__toggle--max" type="button">
+                    <svg width="20px" height="23px" viewBox="0 0 20 23" enable-background="new 0 0 20 23" xml:space="preserve">
+                      <path opacity="0.3" fill="#ABABAB" d="M10,20C4.477,20,0,15.522,0,10v2c0,5.522,4.477,10,10,10c5.522,0,10-4.478,10-10v-2 C20,15.522,15.522,20,10,20z"/>
+                      <circle fill="#FFFFFF" cx="10" cy="10" r="10"/>
+                      <circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+                    </svg>
+                  </button>
                 </div>
                 <div class="range-price">
                   <span class="range-price__min">от 0</span>
@@ -184,10 +197,14 @@
               </ul>
               <ul class="sort-menu__controls">
                 <li class="sort-menu__item">
-                  <a class="sort-menu__link sort-menu__link--ascending" href="#">по возрастанию</a>
+                  <a class="sort-menu__link sort-menu__link--ascending" href="#">
+                    <span class="visually-hidden">по возрастанию</span>
+                  </a>
                 </li>
                 <li class="sort-menu__item">
-                  <a class="sort-menu__link sort-menu__link--descending" href="#">по убыванию</a>
+                  <a class="sort-menu__link sort-menu__link--descending" href="#">
+                    <span class="visually-hidden">по убыванию</span>
+                  </a>
                 </li>
               </ul>
             </div>

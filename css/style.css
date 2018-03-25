@@ -974,6 +974,16 @@ img {
     margin-bottom: 39px;
 }
 
+.content-top {
+    width: 1040px;
+    padding: 0 80px;
+}
+
+.content-wrap {
+    display: flex;
+    justify-content: center;
+    min-width: 1200px;
+}
 
 .content h1 {
     margin-bottom: 20px;
@@ -1008,24 +1018,13 @@ img {
     color: rgba(0,0,0, 0.3);
 }
 
-/* основное содержимое */
-.content-top {
-  width: 1040px;
-  padding: 0 60px;
-}
-
-.content-wrap {
-    display: flex;
-    justify-content: center;
-    min-width: 1200px;
-}
 
 /* фильтры */
 .filters {  
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  flex-basis: 336px;
+    flex-basis: 315px;
   
     background-color: #efefef;
     flex-grow: 1;
@@ -1158,13 +1157,9 @@ img {
 }
 
 .range-price input[type="text"] {
-  border: none;
-  width: 70px;
+    border: none;
+    width: 70px;
 }
-
-/*.range-price__min {
-    margin-right: 60px;
-}*/
 
 .filters--color,
 .filters--bluetooth {
@@ -1174,7 +1169,6 @@ img {
 }
 
 .filters__item {
-    
     padding-left: 38px;
     margin-bottom: 10px;
 }
@@ -1210,7 +1204,7 @@ img {
 }
 
 .filter-input__radio:not(:checked) + .filters__name::before {
-   top: -3px;
+     top: -3px;
     border-radius: 50%;
 }
 
@@ -1235,7 +1229,7 @@ img {
 }
 
 .filters--button {
-  width: 200px
+    width: 200px
 }
 
 /* продукция */
@@ -1244,7 +1238,7 @@ img {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-  flex-basis: 840px;
+    flex-basis: 845px;
 }
 
 /* сортировка */
@@ -1254,23 +1248,35 @@ img {
 }
 
 .sort-menu {
-  box-sizing: border-box;
+    box-sizing: border-box;
     display: flex;
-    align-items: center;
-    padding-left: 70px;
-    padding-right: 20px;
+    align-items: baseline;
+    padding-top: 17px;
+    padding-left: 73px;
+    /*padding-right: 13px;*/
     margin-right: auto;
     width: 845px;
     height: 70px;  
+  
+  outline: 1px solid green;
+}
+
+.sort-menu__list,
+.sort-menu__controls {
+    padding: 0;
+    list-style: none;
+  
+  outline: 1px solid green;
 }
 
 .sort-menu__list {
     display: flex; 
     margin: 0;
+    margin-right: auto;
 }
 
 .sort-menu__item {
-  padding-right: 30px;
+    padding-right: 30px;
 }
 
 .sort-menu__controls {
@@ -1278,7 +1284,11 @@ img {
     justify-content: space-between;
     width: 40px;
     margin: 0;
-    margin-left: auto;
+    /*margin-left: auto;*/
+}
+.sort-menu__controls li {
+    margin: 0;
+    padding: 0;
 }
 
 .sort-menu__title {
@@ -1290,14 +1300,7 @@ img {
     font-style: normal;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
-}
-
-.sort-menu__list,
-.sort-menu__controls {
-    
-    padding: 0;
-    list-style: none;
+    letter-spacing: 0.23em;
 }
 
 .sort-menu__link {
@@ -1310,48 +1313,38 @@ img {
     opacity: 1;
 }
 
-.sort-menu__controls li {
-  margin: 0;
-}
-
 .sort-menu__link--ascending,
 .sort-menu__link--descending {
-  display: block;
-  width: 10px;
-  height: 10px;
+    display: block;
+    width: 10px;
+    height: 10px;
 }
 
 .sort-menu__link--ascending {
-  background-image: url(../img/icon-up-dir.svg);
-  background-repeat: no-repeat;
-  opacity: 0.2;
+    background-image: url(../img/icon-up-dir.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
 }
 
 .sort-menu__link--descending {
-  background-image: url(../img/icon-down-dir.svg);
-  background-repeat: no-repeat;
+    background-image: url(../img/icon-down-dir.svg);
+    background-repeat: no-repeat;
 }
 
 /* собственно сами товары */
 
 .product {
-  box-sizing: border-box;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0;
-    /*padding-top: 70px;
-    padding-bottom: 75px;
-    padding-left: 70px; 
-    width: 760px;
-*/  
-  
+    margin: 0; 
     width: 845px;
-    padding-left: 66px;
-    padding-right: 20px;
-    padding-top: 70px;
-    
+    padding-left: 73px;
+    /*padding-right: 12px;*/
+    padding-top: 68px;
     margin-right: auto;
+    margin-bottom: 20px;
   
     list-style: none;
     background-color: #ffffff;  
@@ -1360,6 +1353,7 @@ img {
 .product__item {
     position: relative;
     width: 360px;
+    margin-bottom: 50px;
 }
 
 .product-name-wrapper {

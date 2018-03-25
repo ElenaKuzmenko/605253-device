@@ -1271,8 +1271,9 @@ img {
 
 .sort-menu__list {
     display: flex; 
+    flex-grow: 1;
     margin: 0;
-    margin-right: auto;
+    
 }
 
 .sort-menu__item {

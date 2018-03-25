@@ -429,6 +429,10 @@ img {
     background-color: #ffffff;
 }
 
+.slider-promo__item::after {
+    
+}
+
 #selfie-slide:checked ~ .slider-promo__item:nth-last-of-type(3),
 #fitnes-slide:checked ~ .slider-promo__item:nth-last-of-type(2),
 #kvadrokopter-slide:checked ~ .slider-promo__item:nth-last-of-type(1) {
@@ -440,15 +444,14 @@ img {
 #kvadrokopter-slide:checked ~ .controls-promo .control-promo--3-slide::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 13px;
-    height: 13px;
+    top: 4px;
+    left: 4px;
+    box-sizing: border-box;
+    width: 4px;
+    height: 4px;
   
-    background-image: url(../img/radio-on.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain;
+    border: 1px solid #000000;
+    border-radius: 50%;
   
     z-index: 1;
 }
@@ -580,7 +583,7 @@ img {
 }
 
 .name-camera::after {
-    top: 3px;
+    left: 3px;
     background-image: url(../img/action-camera.svg);
     
 }
@@ -622,6 +625,7 @@ img {
 }
 
 .service-slider .container {
+    position: relative;
     display: flex;
     min-height: 408px;
     margin-bottom: 93px;
@@ -636,6 +640,17 @@ img {
     margin-right: 120px;
 }
 
+.service-slider__controls::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 277px;
+  display: block;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+}
+
 .service-slider__button {
     width: 160px;
     margin-bottom: 28px;
@@ -646,33 +661,51 @@ img {
   padding-left: 0;
 }
 
+.service-slider__button.active {
+  width: 280px;
+  padding-left: 17px;
+  text-align: left;
+  background-color: #000000;
+  background-image: none;
+  color: #f7e184;
+}
+
 .slider-content {
+    position: relative;
     flex-grow: 1;
-    margin-top: 93px;
+    margin-top: 50px;
 }
 .service-slider__item {
-    min-height: 200px;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 760px;
+    min-height: 230px;
+  
+    z-index: -1;
 }
 
 .service-slider__item--delivery {
+    z-index: 1;
     background-image: url(../img/delivery.svg);
     background-repeat: no-repeat;
-    background-position: 559px 12px;
+    background-position: 558px 55px;
 }
 
 .service-slider__item--warranty {
     background-image: url(../img/warranty.svg);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: 545px 30px;
 }
 
 .service-slider__item--credit {
     background-image: url(../img/credit.svg);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: 535px 30px;
 }
 
 .service-slider__title {
+    padding-top: 43px;
     margin-bottom: 30px;
 }
 

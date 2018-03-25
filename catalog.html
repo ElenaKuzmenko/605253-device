@@ -132,8 +132,8 @@
                   </button>
                 </div>
                 <div class="range-price">
-                  <span class="range-price__min">от 0</span>
-                  <span class="range-price__max">до 5000</span>
+                  <label class="range-price__min">от <input name="min-price" type="text" value="0"></label>
+                  <label class="range-price__max">до <input name="max-price" type="text" value="5000"></label>
                 </div>
               </div>
               </fieldset>
@@ -141,23 +141,23 @@
               <legend class="filters__legend">Цвет</legend>
               <ul class="filters--color">
                 <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" id="black" name="black">
+                  <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" id="black" name="black" checked>
                   <label class="filters__name" for="black">Черный</label>
                 </li>
                 <li class="filters__item">
-                  <input class="visually-hidden " type="checkbox" id="white" name="white">
+                  <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" id="white" name="white" checked>
                   <label class="filters__name" for="white">Белый</label>
                 </li>
                 <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" id="blue" name="blue">
+                  <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" id="blue" name="blue" checked>
                   <label class="filters__name" for="blue">Синий</label>
                 </li>
                 <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" id="red" name="red">
+                  <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" id="red" name="red" checked>
                   <label class="filters__name" for="red">Красный</label>
                 </li>
                 <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" id="pink" name="pink">
+                  <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" id="pink" name="pink" checked>
                   <label class="filters__name" for="pink">Розовый</label>
                 </li>
               </ul>
@@ -166,11 +166,11 @@
               <legend class="filters__legend">Bluetooth</legend>
               <ul class="filters--bluetooth">
                 <li class="filters__item">
-                  <input class="visually-hidden" type="radio" id="bluetooth-yes" name="bluetooth">
+                  <input class="visually-hidden filter-input filter-input__radio" type="radio" id="bluetooth-yes" name="bluetooth" checked>
                   <label class="filters__name" for="bluetooth-yes">Есть</label>
                 </li>
                 <li class="filters__item">
-                  <input class="visually-hidden" type="radio" id="bluetooth-no" name="bluetooth">
+                  <input class="visually-hidden filter-input filter-input__radio" type="radio" id="bluetooth-no" name="bluetooth">
                   <label class="filters__name" for="bluetooth-no">Нет</label>
                 </li>
               </ul>

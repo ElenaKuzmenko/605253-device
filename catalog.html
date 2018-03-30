@@ -16,7 +16,7 @@
       </p>
       <div class="user-block">
         <form class="header__search search" action="#" method="get">
-          <label class="search__name" for="header-search" aria-label="Поиск по каталогу"></label>
+          <label class="search__name" for="header-search" aria-label="Поиск по сайту"></label>
           <input class="search__field" type="search" name="search" id="header-search" placeholder="Поиск по сайту">
           <button class="search__button" type="submit">Найти</button>
         </form>
@@ -110,8 +110,8 @@
             <span>Фильтр:</span>
           </h2>
           <form class="filters-wrap" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filters__group">
-              <legend class="filters__legend">Стоимость</legend>
+            <div class="filters__group">
+              <h3 class="filters__legend">Стоимость</h3>
               <div class="range-controls">
                 <div class="range-controls__bar">
                   <button class="range-controls__toggle range-controls__toggle--min" type="button">
@@ -130,13 +130,13 @@
                   </button>
                 </div>
                 <div class="range-price">
-                  <label class="range-price__min">от <input name="min-price" type="text" value="0"></label>
-                  <label class="range-price__max">до <input name="max-price" type="text" value="5000"></label>
+                  <label class="range-price__min">от <input name="min-price" type="text" value="0" disabled></label>
+                  <label class="range-price__max">до <input name="max-price" type="text" value="5000" disabled></label>
                 </div>
               </div>
-              </fieldset>
-            <fieldset class="filters__group">
-              <legend class="filters__legend">Цвет</legend>
+              </div>
+            <div class="filters__group">
+              <h3 class="filters__legend">Цвет</h3>
               <ul class="filters--color">
                 <li class="filters__item">
                   <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" id="black" name="black" checked>
@@ -159,9 +159,9 @@
                   <label class="filters__name" for="pink">Розовый</label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="filters__group">
-              <legend class="filters__legend">Bluetooth</legend>
+            </div>
+            <div class="filters__group">
+              <h3 class="filters__legend">Bluetooth</h3>
               <ul class="filters--bluetooth">
                 <li class="filters__item">
                   <input class="visually-hidden filter-input filter-input__radio" type="radio" id="bluetooth-yes" name="bluetooth" checked>
@@ -172,7 +172,7 @@
                   <label class="filters__name" for="bluetooth-no">Нет</label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
             <button class="button filters--button" type="submit">Показать</button>
           </form>
         </section>
@@ -290,13 +290,13 @@
           <section class="footer__user-menu user">
             <h2 class="visually-hidden">Пользовательское меню</h2>
             <ul class="user__login login">
-              <li class="login__item login__item--footer is-shown">
+              <li class="login__item login__item--footer is-hidden">
                 <a class="login__link login__link--footer" href="login.html">Войти</a>
               </li>
-              <li class="login__item login__item--footer is-hidden">
+              <li class="login__item login__item--footer is-shown">
                 <a class="login__link login__link--footer" href="profile.html">Валентин Петухов</a>
               </li>
-              <li class="login__item login__item--footer is-hidden">
+              <li class="login__item login__item--footer is-shown">
                 <a class="login__link login__link--footer login__link--exit" href="logout.html">Выйти</a>
               </li>
             </ul>

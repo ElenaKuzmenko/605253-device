@@ -170,6 +170,7 @@ img {
 .search__field {
     margin-left: 35px;
     width: 315px;
+    height: 50px;
     padding: 8px 0;
     background: 0 0;
     border: 2px solid transparent;

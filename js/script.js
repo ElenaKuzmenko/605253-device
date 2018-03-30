@@ -22,10 +22,6 @@ WriteUsForm.addEventListener("submit", function (evt) {
     if (!WriteUsName.value || !WrireUsEmail.value) {
         evt.preventDefault();
         console.log("Введите Ваше имя и адрес электронной почты");
-    } else {
-        if (isStorageSupport) {
-            localStorage.setItem("name", WriteUsName.value);
-        }
     }
 });
 
@@ -54,8 +50,10 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (mapPopup.classList.contains("modal-show")) {
-        mapPopup.classList.remove("modal-show");
+        if (mapPopup.classList.contains("modal-show")) {
+            mapPopup.classList.remove("modal-show");
+        }
     }
 });

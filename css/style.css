@@ -606,21 +606,19 @@ img {
 
 .slider-promo__item--quadcopter::before {
     content: "03";
-    z-index: 0;
 }
 
-
-#selfie-slide:checked ~ .slider-promo__item:nth-last-of-type(3),
-#fitnes-slide:checked ~ .slider-promo__item:nth-last-of-type(2),
-#quadcopter-slide:checked ~ .slider-promo__item:nth-last-of-type(1) {
+.selfie-slide:checked ~ .slider-promo__item:nth-last-of-type(3),
+.fitnes-slide:checked ~ .slider-promo__item:nth-last-of-type(2),
+.quadcopter-slide:checked ~ .slider-promo__item:nth-last-of-type(1) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-#selfie-slide:checked ~ .controls-promo .control-promo--1-slide::before,
-#fitnes-slide:checked ~ .controls-promo .control-promo--2-slide::before,
-#quadcopter-slide:checked ~ .controls-promo .control-promo--3-slide::before {
+.selfie-slide:checked ~ .controls-promo .control-promo--1-slide::before,
+.fitnes-slide:checked ~ .controls-promo .control-promo--2-slide::before,
+.quadcopter-slide:checked ~ .controls-promo .control-promo--3-slide::before {
     content: "";
     position: absolute;
     top: 4px;

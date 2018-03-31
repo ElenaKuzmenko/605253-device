@@ -120,8 +120,8 @@ img {
     width: 164px;
     height: 38px;
     margin: 0;
-    margin-bottom: 12px;
-    padding-top: 23px;
+    margin-bottom: 14px;
+    padding-top: 21px;
     padding-left: 59px;
 }
 
@@ -182,11 +182,11 @@ img {
 }
 
 .search__field {
+    box-sizing:  border-box;
     width: 315px;
     height: 50px;
     margin-left: 35px;
     padding: 8px 0;
-
     background: 0 0;
     border: 2px solid transparent;
     opacity: 0.3;
@@ -311,7 +311,6 @@ img {
 .user__login .login__link:not(.login__link--exit),
 .actions__link {
     position: relative;
-
     padding-left: 26px;
 }
 
@@ -330,23 +329,20 @@ img {
 
 .login__link--enter::before,
 .login__link--profile::before {
-    top: 5px;
+    top: 4px;
     left: 0;
-
     background-image: url(../img/user-icon.svg);
 }
 
 .actions__link--compare::before {
-    top: 7px;
+    top: 6px;
     left: 6px;
-
     background-image: url(../img/compare-icon.svg);
 }
 
 .actions__link--cart::before {
     top: 4px;
     left: 5px;
-
     background-image: url(../img/cart-icon.svg);
 }
 
@@ -359,6 +355,10 @@ img {
 
 .login__link:active,
 .actions__link:active {
+    opacity: 0.3;
+}
+
+.login__link--exit {
     opacity: 0.3;
 }
 
@@ -1151,16 +1151,9 @@ img {
 .login__link--footer,
 .footer-actions__link {
     position: relative;
-
-    padding-left: 27px;
-
+    padding-left: 28px;
     color: #ffffff;
-
     opacity: 0.7;
-}
-
-.footer .login__link--exit {
-    padding: 0;
 }
 
 .login__link--footer:not(.login__link--exit)::before,
@@ -1179,24 +1172,28 @@ img {
 
 .footer-actions__link--compare::before {
     top: 6px;
-    left: 7px;
-
+    left: 9px;
     background-image: url(../img/footer-compare.svg);
 }
 
 .footer-actions__link--cart::before {
-    left: 6px;
-
+    left: 7px;
     background-image: url(../img/footer-cart-icon.svg);
 }
 
 .footer-actions__link--cart {
     margin-left: 34px;
+    margin-right: -2px;
 }
 
 .login__link--footer,
 .footer-actions__link {
     color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .login__link--exit {
+    padding: 0;
+    color: rgba( 255, 255, 255, 0.3);
 }
 
 .login__link--footer:hover,

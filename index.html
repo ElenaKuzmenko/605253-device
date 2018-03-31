@@ -92,7 +92,8 @@
     <main class="main-content">
       <h1 class="visually-hidden">Главная страница магазина Device</h1>
     <!--Slider-->
-      <section class="slider-promo  container">
+      <div class="container">
+      <section class="slider-promo">
         <input class="visually-hidden" type="radio" id="selfie-slide" name="slide-control" value="slide-selfie" checked>
         <input class="visually-hidden" type="radio" id="fitnes-slide" name="slide-control" value="slide-fitnes">
         <input class="visually-hidden" type="radio" id="kvadrokopter-slide" name="slide-control" value="slide-kvadrokopter">
@@ -102,7 +103,7 @@
           <label class="controls-promo__item control-promo--3-slide" for="kvadrokopter-slide" aria-label="3 слайд"></label>  
         </div>
 
-        <div class="slider-promo__item">
+        <div class="slider-promo__item slider-promo__item--selfie">
           <img src="img/slider-1.png" alt="Палка для сэлфи" width="560" height="500">
           <div class="slider-promo__content">
             <h2 class="slider-promo__slogan section-title">Делай селфи,<br> как Бен Стиллер! </h2>
@@ -123,7 +124,7 @@
           </div>
         </div>
 
-        <div class="slider-promo__item">
+        <div class="slider-promo__item slider-promo__item--fitnes">
           <img src="img/slider-2.png" alt="Фитнес-браслет" width="560" height="500">
           <div class="slider-promo__content">
             <h2 class="slider-promo__slogan section-title">Худеем<br> правильно!</h2>
@@ -140,7 +141,7 @@
           </div>
         </div>
 
-        <div class="slider-promo__item">
+        <div class="slider-promo__item slider-promo__item--kvadrokopter">
           <img src="img/slider-3.png" alt="Квадрокоптер" width="560" height="500">
           <div class="slider-promo__content">
             <h2 class="slider-promo__slogan section-title">Порхает как бабочка, жалит как пчела!</h2>
@@ -159,6 +160,7 @@
           </div>
         </div>
       </section>
+      </div>
 
       <section class="category container">
         <h2 class="visually-hidden">Популярные категории товаров</h2>

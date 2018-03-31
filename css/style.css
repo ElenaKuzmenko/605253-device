@@ -486,7 +486,7 @@ img {
     padding-right: 40px;
 }
 
-.kvadrokopter {
+.quadcopter {
     flex-grow: 1;
 
     -webkit-box-flex: 1;
@@ -604,7 +604,7 @@ img {
     content: "02";
 }
 
-.slider-promo__item--kvadrokopter::before {
+.slider-promo__item--quadcopter::before {
     content: "03";
     z-index: 0;
 }
@@ -612,7 +612,7 @@ img {
 
 #selfie-slide:checked ~ .slider-promo__item:nth-last-of-type(3),
 #fitnes-slide:checked ~ .slider-promo__item:nth-last-of-type(2),
-#kvadrokopter-slide:checked ~ .slider-promo__item:nth-last-of-type(1) {
+#quadcopter-slide:checked ~ .slider-promo__item:nth-last-of-type(1) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -620,7 +620,7 @@ img {
 
 #selfie-slide:checked ~ .controls-promo .control-promo--1-slide::before,
 #fitnes-slide:checked ~ .controls-promo .control-promo--2-slide::before,
-#kvadrokopter-slide:checked ~ .controls-promo .control-promo--3-slide::before {
+#quadcopter-slide:checked ~ .controls-promo .control-promo--3-slide::before {
     content: "";
     position: absolute;
     top: 4px;
@@ -801,7 +801,7 @@ img {
     background-image: url(../img/watches.svg);
 }
 
-.name-kvadrokopter::after {
+.name-quadcopter::after {
     top: 3px;
 
     background-image: url(../img/kvadrokopter.svg);

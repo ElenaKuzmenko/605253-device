@@ -1793,7 +1793,7 @@ img {
 }
 
 .range-controls__toggle:focus {
-    outline: 1px dotted #000000;
+    outline: 1px solid #61c3ff;
 }
 
 .range-controls__toggle:active {
@@ -1863,6 +1863,10 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.filter-input:focus + label {
+    outline: 1px solid #61c3ff;
 }
 
 .filter-input__checkbox:not(:checked) + .filters__name::before,

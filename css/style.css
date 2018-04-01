@@ -1369,10 +1369,46 @@ img {
 
 /*   модальные окна    */
 
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+  
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@keyframes error {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+
 .write-us {
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: calc(50% - 250px);
+    left: calc(50% - 480px);
     z-index: 100;
 
     width: 960px;
@@ -1381,9 +1417,6 @@ img {
     background-color: #ffffff;
     -webkit-box-shadow: 0 2px 50px 0 #000000;
             box-shadow: 0 2px 50px 0 #000000;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
 }
 
 .modal__form {
@@ -1561,6 +1594,14 @@ img {
 
 .modal-show {
     display: block;
+  
+    -webkit-animation: move 0.6s;    
+            animation: move 0.6s;
+}
+
+.modal-error {
+    -webkit-animation: error 0.5s;
+            animation: error 0.5s;
 }
 
 /** страница каталога **/

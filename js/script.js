@@ -15,13 +15,16 @@ modalFormOpen.addEventListener("click", function (evt) {
 
 closeWriteUs.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalWriteUs.classList.remove("modal-show");    
+    modalWriteUs.classList.remove("modal-show");
+    modalWriteUs.classList.remove("modal-error");
 });
 
 WriteUsForm.addEventListener("submit", function (evt) {
     if (!WriteUsName.value || !WrireUsEmail.value) {
         evt.preventDefault();
-        console.log("Введите Ваше имя и адрес электронной почты");
+        modalWriteUs.classList.remove("modal-error");
+        modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
+        modalWriteUs.classList.add("modal-error");
     }
 });
 
@@ -30,6 +33,7 @@ window.addEventListener("keydown", function (evt) {
         evt.preventDefault();
         if (modalWriteUs.classList.contains("modal-show")) {
             modalWriteUs.classList.remove("modal-show");
+            modalWriteUs.classList.remove("modal-error");
         }
     }
 });
